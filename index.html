@@ -1,0 +1,312 @@
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+.bs-calltoaction{
+    position: relative;
+    width:auto;
+    padding: 15px 25px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+    .bs-calltoaction > .row{
+        display:table;
+        width: calc(100% + 30px);
+    }
+     
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:table-cell;
+            vertical-align:middle;
+        }
+
+            .cta-contents{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+                .cta-title{
+                    margin: 0 auto 15px;
+                    padding: 0;
+                }
+
+                .cta-desc{
+                    padding: 0;
+                }
+
+                .cta-desc p:last-child{
+                    margin-bottom: 0;
+                }
+
+            .cta-button{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+@media (max-width: 991px){
+    .bs-calltoaction > .row{
+        display:block;
+        width: auto;
+    }
+
+        .bs-calltoaction > .row > [class^="col-"],
+        .bs-calltoaction > .row > [class*=" col-"]{
+            float:none;
+            display:block;
+            vertical-align:middle;
+            position: relative;
+        }
+
+        .cta-contents{
+            text-align: center;
+        }
+}
+
+
+
+.bs-calltoaction.bs-calltoaction-default{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.bs-calltoaction.bs-calltoaction-primary{
+    color: #286090;
+    /*color: #fff;*/
+    background-color: rgba(51, 122, 183, 0.25);
+    /*background-color: #337ab7;*/
+    border-color: #2e6da4;
+}
+
+.bs-calltoaction.bs-calltoaction-info{
+    color: #31b0d5;
+    /*color: #fff;*/
+    background-color: rgba(91, 192, 222, 0.25);
+    /*background-color: #5bc0de;*/
+    border-color: #46b8da;
+}
+
+.bs-calltoaction.bs-calltoaction-success{
+    /*color: #fff;*/
+    color: #449d44;
+    /*background-color: #5cb85c;*/
+    background-color: rgba(92, 184, 92, 0.25);
+    border-color: #4cae4c;
+}
+
+.bs-calltoaction.bs-calltoaction-warning{
+    /*color: #fff;*/
+    color: #d58512;
+    /*background-color: #f0ad4e;*/
+    background-color: rgba(240, 173, 78, 0.25);
+    border-color: #eea236;
+}
+
+.bs-calltoaction.bs-calltoaction-danger{
+    color: #c9302c;
+    /*color: #fff;*/
+    background-color: rgba(217, 83, 79, 0.25);
+    /*background-color: #d9534f;*/
+    border-color: #d43f3a;
+}
+
+## DAS BUTTONS
+
+.btn3d {
+    position:relative;
+    top: -6px;
+    border:0;
+     transition: all 40ms linear;
+     margin-top:10px;
+     margin-bottom:10px;
+     margin-left:2px;
+     margin-right:2px;
+}
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    -moz-outline-style:none;
+         outline:medium none;
+}
+.btn3d:active, .btn3d.active {
+    top:2px;
+}
+.btn3d.btn-white {
+    color: #666666;
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
+    background-color:#fff;
+}
+.btn3d.btn-white:active, .btn3d.btn-white.active {
+    color: #666666;
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+    background-color:#fff;
+}
+.btn3d.btn-default {
+    color: #666666;
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
+    background-color:#f9f9f9;
+}
+.btn3d.btn-default:active, .btn3d.btn-default.active {
+    color: #666666;
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+    background-color:#f9f9f9;
+}
+.btn3d.btn-primary {
+    box-shadow:0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#4274D7;
+}
+.btn3d.btn-primary:active, .btn3d.btn-primary.active {
+    box-shadow:0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color:#4274D7;
+}
+.btn3d.btn-success {
+    box-shadow:0 0 0 1px #31c300 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #5eb924, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#78d739;
+}
+.btn3d.btn-success:active, .btn3d.btn-success.active {
+    box-shadow:0 0 0 1px #30cd00 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #78d739;
+}
+.btn3d.btn-info {
+    box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#39B3D7;
+}
+.btn3d.btn-info:active, .btn3d.btn-info.active {
+    box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #39B3D7;
+}
+.btn3d.btn-warning {
+    box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#FEAF20;
+}
+.btn3d.btn-warning:active, .btn3d.btn-warning.active {
+    box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #FEAF20;
+}
+.btn3d.btn-danger {
+    box-shadow:0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#D73814;
+}
+.btn3d.btn-danger:active, .btn3d.btn-danger.active {
+    box-shadow:0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #D73814;
+}
+.btn3d.btn-magick {
+    color: #fff;
+    box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#bb39d7;
+}
+.btn3d.btn-magick:active, .btn3d.btn-magick.active {
+    box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: #bb39d7;
+}
+
+.maintext {
+	color:#555; 
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="col-sm-12">
+		<div class="page-header">
+  			<h1><span class="text-danger">20</span><span class="text-primary">18</span> Project <br><small>Don't fear the future. Steer the future.</small></h1>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+            <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-warning">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title maintext"><span class="glyphicon glyphicon-eye-open"></span>   Secure yourself online</h1>
+                            <div class="cta-desc">
+                                <p>Online activism can make you easier to track.</p>
+                                <p>Follow a few easy steps to make your online activism safer.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn3d btn btn-lg btn-block btn-default"><span class="glyphicon glyphicon-lock"></span>   Encrypt my browsing!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-primary">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title maintext"><span class="glyphicon glyphicon-piggy-bank"></span>   Support critical organizations</h1>
+                            <div class="cta-desc">
+                                <p>Civil rights, activism, and organizing groups need support more than ever.</p>
+                                <p>Don't have time? Donate money.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn3d btn btn-lg btn-block btn-default"><span class="glyphicon glyphicon-usd"></span>   Help me donate!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-info">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title maintext"><span class="glyphicon glyphicon-bullhorn"></span>   Start volunteering</h1>
+                            <div class="cta-desc">
+                                <p>If politics is personal then volunteering is the strongest political statement.</p>
+                                <p>Don't have money? Donate time.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn3d btn btn-lg btn-block btn-default"><span class="glyphicon glyphicon-globe"></span>   Show me where!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-success">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title maintext"><span class="glyphicon glyphicon-earphone"></span>   Contact your representatives</h1>
+                            <div class="cta-desc">
+                                <p>Direct action? How about direct contact.</p>
+                                <p>Your local representatives are obligated to hear and respond to you.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn3d btn btn-lg btn-block btn-default maintext"><span class="glyphicon glyphicon-map-marker"></span>   Find my representatives!</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title maintext"><span class="glyphicon glyphicon-education"></span>   Learn more about the issues</h1>
+                            <div class="cta-desc">
+                                <p>Knowledge is power. Arm yourself with information</p>
+                                <p>Find out where and how your rights are being eroded.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="#" class="btn3d btn btn-lg btn-block btn-default"><span class="glyphicon glyphicon-apple"></span>   Show me resources!</a>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+
+</body>
